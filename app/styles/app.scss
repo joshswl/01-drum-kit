@@ -6,11 +6,13 @@
 @import 'box-sizing';
 
 html {
-  font-size: 10px;
-  background: url(http://i.imgur.com/b9r5sEL.jpg) bottom center;
+  background: url('http://i.imgur.com/b9r5sEL.jpg') bottom center;
   background-size: cover;
+  font-size: 10px;
 }
-body,html {
+
+body,
+html {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
@@ -19,23 +21,23 @@ body,html {
 .keys {
   display: flex;
   flex: 1;
-  min-height: 100vh;
   align-items: center;
   justify-content: center;
+  min-height: 100vh;
 }
 
 .key {
+  width: 10rem;
+  margin: 1rem;
+  padding: 1rem 0.5rem;
+  transition: all 0.07s ease;
   border: .4rem solid black;
   border-radius: .5rem;
-  margin: 1rem;
-  font-size: 1.5rem;
-  padding: 1rem .5rem;
-  transition: all .07s ease;
-  width: 10rem;
-  text-align: center;
-  color: white;
   background: rgba(0,0,0,0.4);
-  text-shadow: 0 0 .5rem black;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  text-shadow: 0 0 0.5rem black;
 }
 
 .playing {
@@ -50,8 +52,8 @@ kbd {
 }
 
 .sound {
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  letter-spacing: .1rem;
   color: #ffc600;
+  font-size: 1.2rem;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
 }
